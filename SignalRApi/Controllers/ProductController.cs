@@ -29,7 +29,42 @@ namespace SignalRApi.Controllers
             var value = _mapper.Map<List<ResultProductDto>>(_productService.TGetListAll());
             return Ok(value);
         }
-        [HttpGet("ProductListWithCategory")]
+        [HttpGet("ProductCount")]
+        public IActionResult ProductCount()
+        {
+            return Ok(_productService.TProductCount());
+        }
+		[HttpGet("ProductNameByMaxPrice")]
+		public IActionResult ProductNameByMaxPrice()
+		{
+			return Ok(_productService.TProductNameByMaxPrice());
+		}
+		[HttpGet("ProductNameByMinPrice")]
+		public IActionResult ProductNameByMinPrice()
+		{
+			return Ok(_productService.TProductNameByMinPrice());
+		}
+		[HttpGet("ProductAvgPriceByHamburger")]
+		public IActionResult ProductAvgPriceByHamburger()
+		{
+			return Ok(_productService.TProductAvgPriceByHamburger());
+		}
+		[HttpGet("ProductCountByHamburger")]
+		public IActionResult ProductCountByHamburger()
+		{
+			return Ok(_productService.TProductCountByCategoryNameHamburger());
+		}
+		[HttpGet("ProductCountByDrink")]
+		public IActionResult ProductCounByDrink()
+		{
+			return Ok(_productService.TProductCountByCategoryDrink());
+		}
+		[HttpGet("ProductPriceAvg")]
+		public IActionResult ProductPriceAvg()
+		{
+			return Ok(_productService.TProductPriceAvg());
+		}
+		[HttpGet("ProductListWithCategory")]
         public IActionResult ProductListWhithCategory() 
         {
             var context = new SignalRContext();
@@ -57,17 +92,18 @@ namespace SignalRApi.Controllers
                Price= createProductDto.Price,
                 ProductName= createProductDto.ProductName,
                 ProductStatus= createProductDto.ProductStatus,  
+                CategoryId = createProductDto.CategoryId,
             });
             return Ok("Ürün Bilgisi Eklendi");
         }
-        [HttpDelete]
+        [HttpDelete("{id}")]
         public IActionResult DeleteProduct(int id)
         {
             var value = _productService.TGetByID(id);
             _productService.TDelete(value);
             return Ok("Ürün bilgisi Silindi");
         }
-        [HttpGet("GetProduct")]
+        [HttpGet("{id}")]
         public IActionResult GetProduct(int id)
         {
             var value = _productService.TGetByID(id);
@@ -84,7 +120,8 @@ namespace SignalRApi.Controllers
                 ProductName= updateProductDto.ProductName,
                 ProductStatus= updateProductDto.ProductStatus,
                 Description= updateProductDto.Description,
-                ProductId = updateProductDto.ProductId
+                ProductId = updateProductDto.ProductId,
+                CategoryId = updateProductDto.CategoryId,
             });
             return Ok("Ürün bilgisi Güncellendi");
         }

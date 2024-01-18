@@ -40,14 +40,14 @@ namespace SignalRApi.Controllers
             });
             return Ok("Müşteri Yorum Bilgisi Eklendi");
         }
-        [HttpDelete]
+        [HttpDelete("{id}")]
         public IActionResult DeleteTestiMonial(int id)
         {
             var value = _testiMonialService.TGetByID(id);
             _testiMonialService.TDelete(value);
             return Ok("Müşteri Yorum bilgisi Silindi");
         }
-        [HttpGet("GetTestiMonial")]
+        [HttpGet("{id}")]
         public IActionResult GetTestiMonial(int id)
         {
             var value = _testiMonialService.TGetByID(id);
@@ -64,6 +64,7 @@ namespace SignalRApi.Controllers
                 Comment= updateTestiMonialDto.Comment,
                 ImageUrl = updateTestiMonialDto.ImageUrl,
                 Status= updateTestiMonialDto.Status,
+                TestiMonialID = updateTestiMonialDto.TestiMonialID
             });
             return Ok("Müşteri Yorum bilgisi Güncellendi");
         }

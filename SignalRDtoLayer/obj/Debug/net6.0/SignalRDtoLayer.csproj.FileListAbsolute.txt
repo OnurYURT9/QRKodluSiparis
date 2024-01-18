@@ -1,11 +1,11 @@
+C:\Users\ONUR\source\repos\SignalrProject\SignalRDtoLayer\bin\Debug\net6.0\SignalRDtoLayer.deps.json
+C:\Users\ONUR\source\repos\SignalrProject\SignalRDtoLayer\bin\Debug\net6.0\SignalRDtoLayer.dll
+C:\Users\ONUR\source\repos\SignalrProject\SignalRDtoLayer\bin\Debug\net6.0\SignalRDtoLayer.pdb
 C:\Users\ONUR\source\repos\SignalrProject\SignalRDtoLayer\obj\Debug\net6.0\SignalRDtoLayer.csproj.AssemblyReference.cache
 C:\Users\ONUR\source\repos\SignalrProject\SignalRDtoLayer\obj\Debug\net6.0\SignalRDtoLayer.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\ONUR\source\repos\SignalrProject\SignalRDtoLayer\obj\Debug\net6.0\SignalRDtoLayer.AssemblyInfoInputs.cache
 C:\Users\ONUR\source\repos\SignalrProject\SignalRDtoLayer\obj\Debug\net6.0\SignalRDtoLayer.AssemblyInfo.cs
 C:\Users\ONUR\source\repos\SignalrProject\SignalRDtoLayer\obj\Debug\net6.0\SignalRDtoLayer.csproj.CoreCompileInputs.cache
-C:\Users\ONUR\source\repos\SignalrProject\SignalRDtoLayer\bin\Debug\net6.0\SignalRDtoLayer.deps.json
-C:\Users\ONUR\source\repos\SignalrProject\SignalRDtoLayer\bin\Debug\net6.0\SignalRDtoLayer.dll
-C:\Users\ONUR\source\repos\SignalrProject\SignalRDtoLayer\bin\Debug\net6.0\SignalRDtoLayer.pdb
 C:\Users\ONUR\source\repos\SignalrProject\SignalRDtoLayer\obj\Debug\net6.0\SignalRDtoLayer.dll
 C:\Users\ONUR\source\repos\SignalrProject\SignalRDtoLayer\obj\Debug\net6.0\refint\SignalRDtoLayer.dll
 C:\Users\ONUR\source\repos\SignalrProject\SignalRDtoLayer\obj\Debug\net6.0\SignalRDtoLayer.pdb

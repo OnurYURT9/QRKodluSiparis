@@ -24,6 +24,9 @@ namespace SignaRDataAccessLayer.Concrete
         public DbSet<Product> Products { get; set; }
         public DbSet<SocialMedia> SocialMedias { get; set; }
         public DbSet<TestiMonial> TestiMonialsS { get; set; }
+        public DbSet<Order> Orders { get; set; }
+        public DbSet<OrderDetail> OrderDetails { get; set; }
+
 
     }
 }

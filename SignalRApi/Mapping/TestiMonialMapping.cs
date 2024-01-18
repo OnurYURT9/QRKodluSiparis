@@ -1,6 +1,7 @@
 ﻿using AutoMapper;
 using SignalRDtoLayer.SocialMediaDto;
 using SignalRDtoLayer.TestiMonialDto;
+using SignalREntityLayer.Entities;
 
 namespace SignalRApi.Mapping
 {
@@ -8,10 +9,10 @@ namespace SignalRApi.Mapping
     {
         public TestiMonialMapping()
         {
-            CreateMap<TestiMonialMapping, ResultTestiMonialDto>().ReverseMap();
-            CreateMap<TestiMonialMapping, CreateTestiMonialDto>().ReverseMap();
-            CreateMap<TestiMonialMapping, UpdateTestiMonialDto>().ReverseMap();
-            CreateMap<TestiMonialMapping, ResultTestiMonialDto>().ReverseMap();
+            CreateMap<TestiMonial, ResultTestiMonialDto>().ReverseMap();
+            CreateMap<TestiMonial, CreateTestiMonialDto>().ReverseMap();
+            CreateMap<TestiMonial, UpdateTestiMonialDto>().ReverseMap();
+            CreateMap<TestiMonial, ResultTestiMonialDto>().ReverseMap();
         }
     }
 }
