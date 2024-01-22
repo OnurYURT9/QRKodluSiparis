@@ -23,9 +23,11 @@ namespace SignaRDataAccessLayer.Concrete
         public DbSet<Feature> Features { get; set; }
         public DbSet<Product> Products { get; set; }
         public DbSet<SocialMedia> SocialMedias { get; set; }
-        public DbSet<TestiMonial> TestiMonialsS { get; set; }
+        public DbSet<TestiMonial> TestiMonials { get; set; }
         public DbSet<Order> Orders { get; set; }
         public DbSet<OrderDetail> OrderDetails { get; set; }
+        public DbSet<MoneyCase> MoneyCases { get; set; }
+        public DbSet<MenuTable> MenuTables { get; set; }
 
 
     }

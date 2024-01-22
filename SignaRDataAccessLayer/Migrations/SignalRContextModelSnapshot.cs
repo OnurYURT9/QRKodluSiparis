@@ -193,6 +193,42 @@ namespace SignaRDataAccessLayer.Migrations
                     b.ToTable("Features");
                 });
 
+            modelBuilder.Entity("SignalREntityLayer.Entities.MenuTable", b =>
+                {
+                    b.Property<int>("MenuTableId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("MenuTableId"));
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<bool>("Status")
+                        .HasColumnType("bit");
+
+                    b.HasKey("MenuTableId");
+
+                    b.ToTable("MenuTables");
+                });
+
+            modelBuilder.Entity("SignalREntityLayer.Entities.MoneyCase", b =>
+                {
+                    b.Property<int>("MoneyCaseId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("MoneyCaseId"));
+
+                    b.Property<decimal>("TotalAmount")
+                        .HasColumnType("decimal(18,2)");
+
+                    b.HasKey("MoneyCaseId");
+
+                    b.ToTable("MoneyCases");
+                });
+
             modelBuilder.Entity("SignalREntityLayer.Entities.Order", b =>
                 {
                     b.Property<int>("OrderId")
@@ -201,12 +237,12 @@ namespace SignaRDataAccessLayer.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("OrderId"));
 
-                    b.Property<DateTime>("Date")
-                        .HasColumnType("datetime2");
-
                     b.Property<string>("Description")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime>("OrderDate")
+                        .HasColumnType("Date");
 
                     b.Property<string>("TableNumber")
                         .IsRequired()
@@ -342,7 +378,7 @@ namespace SignaRDataAccessLayer.Migrations
 
                     b.HasKey("TestiMonialID");
 
-                    b.ToTable("TestiMonialsS");
+                    b.ToTable("TestiMonials");
                 });
 
             modelBuilder.Entity("SignalREntityLayer.Entities.OrderDetail", b =>
