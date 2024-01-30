@@ -1,4 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore;
 using SignalREntityLayer.Entities;
 using System;
 using System.Collections.Generic;
@@ -8,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace SignaRDataAccessLayer.Concrete
 {
-    public class SignalRContext :DbContext
+    public class SignalRContext :IdentityDbContext<AppUser,AppRole,int>
     {
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
@@ -28,7 +29,10 @@ namespace SignaRDataAccessLayer.Concrete
         public DbSet<OrderDetail> OrderDetails { get; set; }
         public DbSet<MoneyCase> MoneyCases { get; set; }
         public DbSet<MenuTable> MenuTables { get; set; }
-
+        public DbSet<Slider> Sliders { get; set; }
+        public DbSet<Basket> Baskets { get; set; }
+        public DbSet<Notification> Notifications { get; set; }
+        
 
     }
 }

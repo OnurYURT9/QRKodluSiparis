@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "ArGRcIpXk0m16xz3TKndrSLngQUHJhJMaMQ/3aviTC8=",
+  "Hash": "ePJo9ZaAim7Im1kkZSfbCiMORx0aevGoGaw7MtH87Vo=",
   "Source": "SignalRWebUI",
   "BasePath": "_content/SignalRWebUI",
   "Mode": "Default",
@@ -627,6 +627,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\feane-1.0.0\\menu.html"
+    },
+    {
+      "Identity": "C:\\Users\\ONUR\\source\\repos\\SignalrProject\\SignalRWebUI\\wwwroot\\js\\chat.js",
+      "SourceId": "SignalRWebUI",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\ONUR\\source\\repos\\SignalrProject\\SignalRWebUI\\wwwroot\\",
+      "BasePath": "_content/SignalRWebUI",
+      "RelativePath": "js/chat.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\chat.js"
     },
     {
       "Identity": "C:\\Users\\ONUR\\source\\repos\\SignalrProject\\SignalRWebUI\\wwwroot\\js\\site.js",
